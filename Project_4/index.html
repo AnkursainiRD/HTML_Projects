@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="pj_4.css">
+
+</head>
+<body>
+    <header>
+        <h4>Travel</h4>
+        <div class="menu-btn"></div>
+        <div class="nav">
+            <div class="links">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Explore</a>
+                <a href="">Gallery</a>
+                <a href="">Contact</a>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <video class="video-slider" src="meterial/video_1.mp4" autoplay muted loop></video>
+            <div class="content">
+                <h1>Wonderful. <br><span>Island</span></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero explicabo, iusto, 
+                    natus eaque vel exercitationem placeat commodi labore debitis doloremque quia quasi
+                     iste animi! Nostrum minus vitae quis beatae id. Lorem ipsum dolor sit amet consectetur and
+                      adipisicing elit. Numquam sapiente, quas asperiores recusandae consequuntur vitae excepturi id eius
+                      placeat voluptas alias quod sit unde nobis laboriosam, atque eaque nemo ducimus.</p>
+                <a href="">Explore</a>     
+            </div>
+            <div class="media-icnos">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href=""><i class="ri-instagram-line"></i></a>
+                <a href=""><i class="ri-twitter-fill"></i></a>
+            </div>
+            <div class="slider-navigation">
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+            </div>
+    </section>
+    <script type="text/javascript">
+        const menuBtn= document.querySelector(".menu-btn");
+        const navigate= document.querySelector(".nav")
+
+        menuBtn.addEventListener("click", () => {
+                  menuBtn.classList.toggle("active");  
+                  navigate.classList.toggle("active")
+        });
+
+        const btns = document.querySelectorAll  (".nav-btn")
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) =>{
+                btn.classList.remove("active");
+            });
+            btns[manual].classList.add("active")
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () =>{
+                    sliderNav(i)
+            });
+        });
+    </script>
+</body>
+</html>

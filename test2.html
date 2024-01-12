@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> -->
+
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+         box-sizing: border-box;
+        }
+    html,body{
+         width: 100%;
+            height: 100%;
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            background-color: rgb(131, 129, 129);
+
+        }
+        #profileImage{
+            width: 160px;
+            height: 160px;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+        #profileImage>img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+
+        }
+        .circle{
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            border-radius: 50%;
+            transition: 0.3s all ease;
+        }
+        .btn{
+            width: 5vw;
+            height: 2vw;
+            border: 1px solid black;
+            background: transparent;
+            transition: 0.3s all ease;
+        }
+        .btn:hover{
+            scale: 1.1;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <!-- <input id="profile" type="file">
+        <div id="profileImage">
+            <img src="" alt=""> -->
+            <button class="btn">Follow</button>
+
+        </div>
+    </div>
+<!-- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/j/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script type="text/javascript"src="https://unpkg.com/sheryjs/dist/Shery.js"></script> -->
+  
+    <script>
+        let flag=0;
+        let btn=document.querySelector(".btn");
+        btn.addEventListener("click",()=>{
+            if(!flag){
+                btn.style.backgroundColor="red"
+                btn.textContent="Followed"
+                flag=1
+            }
+            else{
+                btn.style.backgroundColor="transparent"
+                btn.textContent="Follow"
+                flag=0
+            }
+        })
+    //   var profileInput= document.querySelector("#profile");
+    //   var profileImage=document.querySelector("img")
+    //     profileInput.addEventListener("change",function(){
+    //         profileImage.src=URL.createObjectURL(profileInput.files[0])
+    //     })
+    //   main.addEventListener("click",function(dets){
+   
+    //     let newCircle=`<div class="circle"></div>`
+    //     main.style.top=dets.clientX+'px'
+    //     main.style.left=dets.clientY+'px'
+    //     newCircle.style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`
+    //     main.innerHTML=newCircle
+    //   })
+    </script>
+</body>
+</html>

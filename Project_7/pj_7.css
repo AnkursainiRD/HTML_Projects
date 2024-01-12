@@ -1,0 +1,213 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Averta CY W10";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+
+}
+#main .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 4vw ;
+}
+.nav .logo img{
+    width: 5vw;
+}
+.nav .right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+.nav .right a{
+    font-size: 1vw;
+    font-weight: 450;
+    text-decoration: none;
+    color: #000;
+    
+}
+
+.home {
+    width: 100%;
+    padding: 12vw 17vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 3vw;
+    line-height: 1;
+    align-items: flex-start;
+    
+}
+.home h2{
+    font-size: 1.2vw;
+    font-weight: 400;
+    word-spacing: -3px;
+    align-items: flex-start;
+}
+.home #heading{
+    display: flex;
+    gap: 29px;
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+    transition: 0.5s all ease;
+}
+.home #heading>h1:hover{
+    color: black;
+}
+
+.homelast p{
+    width: 75%;
+    margin-top: 18vw;
+    font-size: 1.5vw;
+    line-height: 40px;
+    font-weight: 450;
+    text-transform: capitalize;
+}
+.homelast p::selection{
+    color: #fff;
+    background-color: #000;
+}
+
+.secondpage .title{
+    padding: 2vw 17vw;
+}
+.title h1{
+    font-weight: 400;
+    font-size: 2.7vw;
+}
+.title>h1:nth-child(2){
+    font-weight: 500;
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+}
+
+.secondpage .content{
+    width: 100%;
+    height: 100vh;
+    padding: 2vw 17vw;
+    display: flex;
+    justify-content: space-between;
+}
+.content .left{
+    overflow: hidden;
+    width: 45%;
+    height: inherit;
+    
+}
+.left .element{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;  
+}
+.element h3{
+    font-weight: 460;
+    margin: 10px 0px;
+}
+.element>h3:nth-child(3){
+    opacity:0.6;
+}
+.content .right{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.content .right .photos{
+    width: 90%;
+    height: 90%;
+    background-color: black;
+}
+.right .photos img{
+    object-fit: cover;
+    height: 100%;
+}
+.secondpage .projects{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+.secondpage .projects button{
+    padding: 16px 25px;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+    border: none;
+    border: 1px solid rgb(220, 218, 218);
+}
+
+.features{
+    width: 100%;
+    margin-top: 22vh;
+}
+.features .about{
+    font-size: 1.6vw;
+    line-height: 1;
+    margin-left: 17vw;
+}
+.about h1{
+    font-weight: 400;
+    
+}
+.features .about p{
+    margin-top: 2vw;
+    word-spacing: 2px;
+    width: 55%;
+    font-size: 1vw;
+    font-weight: 400;
+}
+.features .card{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 9vw;  
+}   
+.features .cd1{
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    height: 42vh; 
+    gap: 23px;
+}
+.card button{
+    width: 30%;
+    padding: 12px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+    border: none;
+    border: 1px solid rgb(220, 218, 218);
+}
+.card h2{
+    font-weight: 400;
+}
+.resources{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.resources button{
+    font-size: 1vw;
+    margin-top: 5vw;
+    padding: 16px 25px;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+    border: none;
+    border: 1px solid rgb(220, 218, 218);
+}
